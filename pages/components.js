@@ -35,14 +35,14 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/nextjs_header.jpg")}>
+      <Parallax image={require("assets/img/maatram_header.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
                 <h1 className={classes.title}>Together we can make a difference.</h1>
-                <h3 className={classes.subtitle}>
-                  An initiative opensource internship program for students
+                <h3>
+                  An initiative open-source internship program for students
                 </h3>
               </div>
             </GridItem>
@@ -50,8 +50,7 @@ export default function Components(props) {
         </div>
       </Parallax>
 
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionLogin />
+      {/* <div className={classNames(classes.main, classes.mainRaised)}>
         <GridItem md={12} className={classes.textCenter}>
           <Link href="/login">
             <a className={classes.link}>
@@ -61,7 +60,7 @@ export default function Components(props) {
             </a>
           </Link>
         </GridItem>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
