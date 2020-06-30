@@ -16,6 +16,10 @@ import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 import SectionLogin from "pages-sections/Components-Sections/SectionLogin.js";
 import styles from "assets/jss/nextjs-material-kit/pages/components.js";
+// Sections for this page
+import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
+import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
+import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
 
 const useStyles = makeStyles(styles);
 
@@ -42,7 +46,7 @@ export default function Components(props) {
               <div className={classes.brand}>
                 <h1 className={classes.title}>Together we can make a difference.</h1>
                 <h3>
-                  An initiative social learning community for students
+                  An initiative social learning platform for students
                 </h3>
               </div>
             </GridItem>
@@ -51,33 +55,9 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <GridItem md={12} className={classes.textCenter}>
-          <Link href="/login">
-            <a className={classes.link}>
-              <Button color="primary" size="lg" simple>
-                Real time IT experience
-              </Button>
-            </a>
-          </Link>
-        </GridItem>
-        <GridItem md={6} className={classes.textCenter}>
-          <Link href="/login">
-            <a className={classes.link}>
-              <Button color="primary" size="lg" simple>
-                collobrative webinar sessions
-              </Button>
-            </a>
-          </Link>
-        </GridItem>
-        <GridItem md={6} className={classes.textCenter}>
-          <Link href="/login">
-            <a className={classes.link}>
-              <Button color="primary" size="lg" simple>
-                open source contributions
-              </Button>
-            </a>
-          </Link>
-        </GridItem>
+        <div className={classes.container}>
+          <ProductSection />
+        </div>
       </div>
       <Footer />
     </div>

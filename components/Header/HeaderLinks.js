@@ -27,26 +27,6 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Button
-          href="#"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <Home className={classes.icons} /> Home
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="#"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <EmojiObjects className={classes.icons} /> Get Started
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-linkedIn"
           title="Follow us on LinkedIn"
