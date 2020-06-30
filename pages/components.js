@@ -42,7 +42,7 @@ export default function Components(props) {
               <div className={classes.brand}>
                 <h1 className={classes.title}>Together we can make a difference.</h1>
                 <h3>
-                  An initiative open-source internship program for students
+                  An initiative social learning community for students
                 </h3>
               </div>
             </GridItem>
@@ -50,17 +50,35 @@ export default function Components(props) {
         </div>
       </Parallax>
 
-      {/* <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main, classes.mainRaised)}>
         <GridItem md={12} className={classes.textCenter}>
           <Link href="/login">
             <a className={classes.link}>
               <Button color="primary" size="lg" simple>
-                See more
+                Real time IT experience
               </Button>
             </a>
           </Link>
         </GridItem>
-      </div> */}
+        <GridItem md={6} className={classes.textCenter}>
+          <Link href="/login">
+            <a className={classes.link}>
+              <Button color="primary" size="lg" simple>
+                collobrative webinar sessions
+              </Button>
+            </a>
+          </Link>
+        </GridItem>
+        <GridItem md={6} className={classes.textCenter}>
+          <Link href="/login">
+            <a className={classes.link}>
+              <Button color="primary" size="lg" simple>
+                open source contributions
+              </Button>
+            </a>
+          </Link>
+        </GridItem>
+      </div>
       <Footer />
     </div>
   );
