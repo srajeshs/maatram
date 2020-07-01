@@ -21,9 +21,9 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>What We Do</h2>
           <h5 className={classes.description}>
-            <b>social learning platform</b>
-            Maatram leads transformation in the lives of deserving underprivileged students by providing quality sponsored education,
-            continuous skill development, world class exposure to solving real life challenges, getting them placement ready and by imbibing societal skills. In-turn the students get groomed to become the finest in the society.
+            <h4>Social Learning Platform</h4>
+              Our social learning platform helps students to test their knowledge, share their expertise and take ownership of their training.
+              Opportunity to create and contribute is an excellent way to help them better understand the topics.
           </h5>
         </GridItem>
       </GridContainer>
@@ -31,7 +31,8 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Our Programs</h2>
           <h5 className={classes.description}>
-            Maatram leads transformation in the lives of deserving underprivileged students by providing quality sponsored education.
+            Capturing organisational knowledge, improving communication, guiding students in terms of all technical aspect and 
+            providing End2End development skills across all the platforms and verticals
           </h5>
         </GridItem>
       </GridContainer>
@@ -39,8 +40,8 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Webniar"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Free Webniars"
+              description="Interactive webinars to give an quick glance into emerging technologies and industry trends."
               icon={Airplay}
               iconColor="info"
               vertical
@@ -49,7 +50,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Career Guidance"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="It can boost the morale and confidence and give new directions to the students."
               icon={Face}
               iconColor="success"
               vertical
@@ -58,7 +59,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="IT Experience"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Understanding how organisations works and roles for people and their interest with many levels of expertise."
               icon={Loyalty}
               iconColor="danger"
               vertical
@@ -68,17 +69,8 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Education in the most relevant tools & skills"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={CastForEducation}
-              iconColor="gray"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Increased code knowledge & understanding"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Code knowledge & Understanding"
+              description="Get an introduction to code, find out how it works, what it can do, and how it can benefit you."
               icon={Code}
               iconColor="info"
               vertical
@@ -87,27 +79,16 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Track your progress"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Students progress tracking through their performace & skills and will be honored with badge"
               icon={ArtTrack}
               iconColor="success"
               vertical
             />
           </GridItem>
-        </GridContainer>
-        <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Interpersonal skills for confidence & expertise"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={LocalLibrary}
-              iconColor="gray"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Direct contribution to open-source softwares"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Contribution to open-source softwares"
+              description="Community as a whole contribute to open source software projects for a variety of platforms"
               icon={GitHub}
               iconColor="info"
               vertical
