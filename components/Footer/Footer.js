@@ -32,30 +32,15 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/?ref=njsmk-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Maatram
-              </a>
+              Maatram
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="#"
+                href="/about"
                 className={classes.block}
-                target="_blank"
+                target="_self"
               >
                 About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="#"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
               </a>
             </ListItem>
           </List>
@@ -64,9 +49,9 @@ export default function Footer(props) {
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="#"
+            href="/"
             className={aClasses}
-            target="_blank"
+            target="_self"
           >
             Maatram
           </a>

@@ -3,11 +3,12 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import { Loyalty, Airplay, Face, CastForEducation, ArtTrack, Code, GitHub, LocalLibrary } from "@material-ui/icons";
+import { Loyalty, Airplay, Face, CastForEducation, ArtTrack, Code, GitHub, LocalLibrary, AssignmentTurnedIn } from "@material-ui/icons";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
+import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js";
 
@@ -20,18 +21,17 @@ export default function ProductSection() {
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>What We Do</h2>
-          <h5 className={classes.description}>
-            <h4>Social Learning Platform</h4>
-              Our social learning platform helps students to test their knowledge, share their expertise and take ownership of their training.
-              Opportunity to create and contribute is an excellent way to help them better understand the topics.
-          </h5>
+          <h5 className={classes.description}></h5>
+          <h4><b>Social Learning Platform</b></h4>
+          Our social learning platform helps students to test their knowledge, share their expertise and take ownership of their training.
+          Opportunity to create and contribute is an excellent way to help them better understand the topics.
         </GridItem>
       </GridContainer>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Our Programs</h2>
           <h5 className={classes.description}>
-            Capturing organisational knowledge, improving communication, guiding students in terms of all technical aspect and 
+            Capturing organisational knowledge, improving communication, guiding students in terms of all technical aspect and
             providing End2End development skills across all the platforms and verticals
           </h5>
         </GridItem>
@@ -40,7 +40,7 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Webniars"
+              title="Webniars & Presentations"
               description="Interactive webinars to give an quick glance into emerging technologies and industry trends."
               icon={Airplay}
               iconColor="info"
@@ -61,7 +61,7 @@ export default function ProductSection() {
               title="IT Experience"
               description="Understanding how organisations works and roles for people and their interest with many levels of expertise."
               icon={Loyalty}
-              iconColor="danger"
+              iconColor="info"
               vertical
             />
           </GridItem>
@@ -69,33 +69,60 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Code knowledge & Understanding"
+              title="On-Demand Traning Courses"
               description="Get an introduction to code, find out how it works, what it can do, and how it can benefit you."
               icon={Code}
-              iconColor="info"
+              iconColor="danger"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Track your progress"
-              description="Students progress tracking through their performace & skills and will be honored with badge"
-              icon={ArtTrack}
-              iconColor="success"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Contribution to open-source softwares"
+              title="Contribution to Open-Source Softwares"
               description="Community as a whole contribute to open source software projects for a variety of platforms"
               icon={GitHub}
               iconColor="info"
               vertical
             />
           </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Track Progress"
+              description="Students progress tracking through their performace & skills and will be honored with badge"
+              icon={AssignmentTurnedIn}
+              iconColor="success"
+              vertical
+            />
+          </GridItem>
         </GridContainer>
       </div>
+      <GridContainer justify="center">
+        <GridItem xs={12} sm={12} md={8}>
+          <h2 className={classes.title}>Student's Benefits</h2>
+          <h5 className={classes.description}>
+            Increased engagement across disengaged learners, Students able to develop self organisation skills, encouraged collaboration
+            and skills that can be used in the workforce
+          </h5>
+        </GridItem>
+      </GridContainer>
+      <GridContainer justify="center">
+        <GridItem xs={12} sm={12} md={8}>
+          <Button
+            color="danger"
+            size="lg"
+            href="https://www.linkedin.com/groups/8956139/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Started Now &nbsp; &nbsp; <i className="fas fa-play" />
+          </Button>
+        </GridItem>
+        <GridItem xs={12} sm={12} md={8}>
+          <h5>
+            <b>Tell me and I forget. Teach me and I remember. Involve me and I Learn</b>
+          </h5>
+        </GridItem>
+      </GridContainer>
     </div>
   );
 }

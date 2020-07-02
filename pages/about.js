@@ -32,11 +32,10 @@ export default function LandingPage(props) {
   return (
     <div>
       <Header
-        color="transparent"
-        routes={dashboardRoutes}
-        brand="NextJS Material Kit"
+        brand="Maatram"
         rightLinks={<HeaderLinks />}
         fixed
+        color="transparent"
         changeColorOnScroll={{
           height: 400,
           color: "white"
@@ -47,35 +46,24 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
-              <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
-              </h4>
+              <h1 className={classes.title}>About Us</h1>
+              <h5>
+                Our team is based in chennai and is designing technology for education that has a positive global impact.
+              </h5>
               <br />
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://www.linkedin.com/groups/8956139/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
-                Watch video
+                Get Started Now &nbsp; &nbsp; <i className="fas fa-play" />
               </Button>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
-          <ProductSection />
-          <TeamSection />
-          <WorkSection />
-        </div>
-      </div>
       <Footer />
     </div>
   );
