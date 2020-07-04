@@ -18,7 +18,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
-import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
+import AboutSection from "pages-sections/LandingPage-Sections/AboutSection.js";
 import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
 
@@ -64,6 +64,11 @@ export default function LandingPage(props) {
           </GridContainer>
         </div>
       </Parallax>
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classes.container}>
+          <AboutSection />
+        </div>
+      </div>
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -22,7 +23,8 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>What We Do</h2>
           <h5 className={classes.description}></h5>
-          <h4><b>Social Learning Platform</b></h4>
+          <h4>We introducted a new program, specially for IT/CSE/ECE students</h4>
+            <h4><b>Social Learning Platform</b></h4>
           Our social learning platform helps students to test their knowledge, share their expertise and take ownership of their training.
           Opportunity to create and contribute is an excellent way to help them better understand the topics.
         </GridItem>
@@ -50,7 +52,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Career Guidance"
-              description="It can boost the morale and confidence and give new directions to the students."
+              description="Our guidance can boost the morale and confidence and give new directions to the students."
               icon={Face}
               iconColor="success"
               vertical
@@ -70,7 +72,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="On-Demand Traning Courses"
-              description="Get an introduction to code, find out how it works, what it can do, and how it can benefit you."
+              description="Get an introduction to new technologies, find out how it works, what it can do, and how it can benefit you."
               icon={Code}
               iconColor="danger"
               vertical
@@ -79,7 +81,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Contribution to Open-Source Softwares"
-              description="Community as a whole contribute to open source software projects for a variety of platforms"
+              description="Community as a whole contribute to open source software projects for a variety of domains"
               icon={GitHub}
               iconColor="info"
               vertical
@@ -88,7 +90,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Track Progress"
-              description="Students progress tracking through their performace & skills and will be honored with badge"
+              description="Students able to achieve their goal by their progress, performance, skills and roadmap"
               icon={AssignmentTurnedIn}
               iconColor="success"
               vertical
@@ -120,6 +122,11 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h5>
             <b>Tell me and I forget. Teach me and I remember. Involve me and I Learn</b>
+          </h5>
+          <h5>
+            <Link href="/about">
+              <a>See more about social learning platform</a>
+            </Link>
           </h5>
         </GridItem>
       </GridContainer>
