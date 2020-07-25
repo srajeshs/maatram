@@ -23,7 +23,7 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>What We Do</h2>
           <h5 className={classes.description}></h5>
-          <h4>We introducted a new program, specially for IT/CSE/ECE students</h4>
+          <h4>We introduced a new program, specially for IT/CSE/ECE students</h4>
             <h4><b>Social Learning Platform</b></h4>
           Our social learning platform helps students to test their knowledge, share their expertise and take ownership of their training.
           Opportunity to create and contribute is an excellent way to help them better understand the topics.
@@ -31,6 +31,17 @@ export default function ProductSection() {
       </GridContainer>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
+          <h5>
+            <Button
+              color="danger"
+              size="lg"
+              href="https://bit.ly/2WRnifJ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register Now &nbsp; <i className="fas fa-arrow-circle-right" />
+            </Button>
+          </h5>
           <h2 className={classes.title}>Our Programs</h2>
           <h5 className={classes.description}>
             Capturing organisational knowledge, improving communication, guiding students in terms of all technical aspect and
