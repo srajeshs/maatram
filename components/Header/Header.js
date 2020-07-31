@@ -12,6 +12,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
+import logo from "assets/img/logo.png";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
@@ -63,7 +64,7 @@ export default function Header(props) {
   });
   const brandComponent = (
     <Link href="/" as="/">
-      <Button className={classes.title}>{brand}</Button>
+      <img src={logo} width="100px"/>
     </Link>
   );
   return (
